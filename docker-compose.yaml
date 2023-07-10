@@ -1,0 +1,11 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+    image: timesheet_img
+    container_name: timesheet_ctn
+    volumes:
+      - ./timesheet.py:/app/timesheet.py
+      - ./output:/app/output # for output
+    entrypoint: [ "python", "timesheet.py" ]

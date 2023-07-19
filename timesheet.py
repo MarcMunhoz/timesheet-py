@@ -76,3 +76,5 @@ end_date = datetime(2023, 7, 9)
 file_path = 'schedule.doc'  # Change this to your desired file path
 
 generate_schedule(start_date, end_date, file_path)
+
+print("File created: ./output/schedule.doc")
